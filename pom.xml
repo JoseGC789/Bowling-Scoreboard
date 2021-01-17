@@ -14,7 +14,7 @@
     </properties>
 
     <modules>
-        <module>ten-pin</module>
+        <module>ten-pin-scoreboard</module>
     </modules>
 
     <build>
