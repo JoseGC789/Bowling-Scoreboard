@@ -4,5 +4,5 @@
       "name": "scoreboard.path",
       "type": "java.lang.String",
       "description": "Path to bowling scoreboards' text file."
-  }
-] }
+    }
+  ] }

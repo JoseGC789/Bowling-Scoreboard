@@ -11,10 +11,10 @@ import javax.validation.constraints.Pattern;
 @EqualsAndHashCode
 public class Scoreboard {
     @JsonProperty("name")
-    @NotEmpty(message = "You forgot to complete a player's name")
+    @NotEmpty(message = "You forgot to fill out a player's name")
     private final String name;
     @JsonProperty("score")
-    @Pattern(message = "%s but it should have been between 0-10, X, / or -", regexp = "([0-9]|10|X|x|-|/)")
+    @Pattern(message = "%s but it should have been between 0-10, X, /, F or -", regexp = "([0-9]|10|X|x|F|f|-|/)")
     @NotEmpty
     private final String score;
 
