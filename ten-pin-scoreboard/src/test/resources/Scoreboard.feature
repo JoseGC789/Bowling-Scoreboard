@@ -3,6 +3,20 @@ Feature: Create a scoreboard
   I want a scoreboard of my games
   So I can tell who won
 
-  Scenario: Show scoreboard
-    When I input my games
+  Background:
+    Given the App is running
+
+  Scenario: Show average scoreboard
+    Given I have an average game
+    When I input my throws
+    Then I'm shown my scoreboard
+
+  Scenario: Show perfect scoreboard
+    Given I have a perfect game
+    When I input my throws
+    Then I'm shown my scoreboard
+
+  Scenario: Show worst scoreboard
+    Given I have an awful game
+    When I input my throws
     Then I'm shown my scoreboard

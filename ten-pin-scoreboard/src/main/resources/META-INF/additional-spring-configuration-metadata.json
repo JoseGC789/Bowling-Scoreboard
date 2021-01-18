@@ -1,8 +1,8 @@
 {
   "properties": [
     {
-      "name": "scoreboard.path",
+      "name": "game.path",
       "type": "java.lang.String",
-      "description": "Path to bowling scoreboards' text file."
+      "description": "Path to bowling games' text file."
     }
   ] }
