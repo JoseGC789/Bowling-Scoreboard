@@ -26,16 +26,16 @@ public class FramesFactory {
             val builder = Terminal.builder();
             if (last.size() >= 1){
                 builder.one(last.get(0));
+                if (last.size() >= 2){
+                    last.get(0).setNext(last.get(1));
+                    builder.two(last.get(1));
+                }
+                if (last.size() >= 3){
+                    last.get(1).setNext(last.get(2));
+                    builder.three(last.get(2));
+                }
+                    finalFrames.add(builder.build());
             }
-            if (last.size() >= 2){
-                last.get(0).setNext(last.get(1));
-                builder.two(last.get(1));
-            }
-            if (last.size() >= 3){
-                last.get(1).setNext(last.get(2));
-                builder.three(last.get(2));
-            }
-            finalFrames.add(builder.build());
 
         } else {
             finalFrames = frames;
