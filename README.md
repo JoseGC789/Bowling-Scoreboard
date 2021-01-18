@@ -10,7 +10,8 @@
     <li>Makefiles</li>
 </ul>
 <h2>How to run</h2>
-<p>In order to run, first localize your game.txt file with all the throws for the players</p>
+<p>In order to run, first localize your game.txt file with all the throws for the players. The path to this file can
+either be relative, if it resides within this projects directory, or absolute.</p>
 <p>With all this info retrieved, you may begin with the next step, running the application. You may choose to do it 
 with docker or without it</p>
 <h3>1- Docker</h3>

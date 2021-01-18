@@ -34,7 +34,7 @@ public class ApplicationStart implements CommandLineRunner {
         for (List<Roll> player : players) {
             System.out.println(player.get(0).getName());
             List<Frame> frames = factory.build(player);
-            System.out.println("Pinfalls" + frames.stream().findFirst().get().mark());;
+            System.out.println("Pinfalls" + frames.stream().findFirst().get().mark());
             System.out.print("Score");
             Integer sum = 0;
             for (Frame frame: frames) {

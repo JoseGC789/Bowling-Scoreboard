@@ -1,16 +1,16 @@
 package com.tenpin.model;
 
+import lombok.Builder;
 import lombok.ToString;
-import lombok.experimental.SuperBuilder;
 
-@SuperBuilder
+@Builder
 @ToString
 public class Terminal extends Frame{
     private final Frame one;
     private final Frame two;
     private final Frame three;
 
-    public Terminal(Frame one, Frame two, Frame three) {
+    private Terminal(Frame one, Frame two, Frame three) {
         super(null, null, null);
         this.one = one;
         this.two = two;
